@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akasha Collective</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #000;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .sans { font-family: Arial, Helvetica, sans-serif; }
+    .hero-stars,
+    .logo-stars {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .hero-stars {
+      opacity: 0.6;
+      background-image:
+        radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,.9), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(232,190,120,.9), transparent),
+        radial-gradient(1.5px 1.5px at 90px 40px, rgba(255,255,255,.75), transparent),
+        radial-gradient(1.5px 1.5px at 140px 90px, rgba(232,190,120,.8), transparent);
+      background-size: 180px 180px;
+    }
+    .logo-stars {
+      opacity: 0.7;
+      background-image:
+        radial-gradient(2px 2px at 20px 20px, rgba(255,255,255,.9), transparent),
+        radial-gradient(2px 2px at 80px 50px, rgba(232,190,120,.9), transparent),
+        radial-gradient(1.5px 1.5px at 130px 110px, rgba(255,255,255,.75), transparent),
+        radial-gradient(1.5px 1.5px at 180px 70px, rgba(232,190,120,.8), transparent);
+      background-size: 220px 220px;
+    }
+    .hero-glow {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 35%),
+        radial-gradient(circle at 20% 30%, rgba(255,215,160,0.12), transparent 18%),
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08), transparent 14%),
+        radial-gradient(circle at 70% 70%, rgba(255,215,160,0.08), transparent 20%);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-black text-white overflow-x-hidden">
+  <section class="relative min-h-screen flex items-center justify-center px-6 py-16">
+    <div class="hero-glow"></div>
+    <div class="hero-stars"></div>
+
+    <div class="relative z-10 max-w-6xl w-full">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <div class="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm tracking-[0.25em] uppercase text-zinc-200 backdrop-blur-sm sans">
+            Grand Junction • Luxury Hair Collective
+          </div>
+
+          <div class="space-y-5">
+            <p class="text-sm md:text-base tracking-[0.55em] uppercase text-zinc-300 sans">Akasha Collective</p>
+            <h1 class="text-6xl md:text-8xl leading-[0.95] text-white">
+              Salon.<br />
+              Experience.<br />
+              Vibe.
+            </h1>
+            <p class="max-w-xl text-lg md:text-xl text-zinc-300 leading-8 sans">
+              A modern collective of independent stylists creating elevated hair, bold beauty, and a whole cosmic-level vibe.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 sans">
+            <a href="#stylists" class="rounded-2xl bg-[#e7c48a] text-black px-7 py-4 text-sm font-semibold tracking-[0.2em] uppercase shadow-2xl shadow-[#e7c48a]/20 transition hover:scale-[1.02] text-center">
+              Book Now
+            </a>
+            <a href="#stylists" class="rounded-2xl border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold tracking-[0.2em] uppercase text-white backdrop-blur-sm transition hover:bg-white/10 text-center">
+              Meet the Collective
+            </a>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md shadow-2xl shadow-black/40">
+            <div class="rounded-[1.5rem] border border-[#e7c48a]/30 bg-black/80 p-10 text-center relative overflow-hidden">
+              <div class="logo-stars"></div>
+              <div class="relative z-10 space-y-5">
+                <div class="mx-auto h-px w-3/4 bg-gradient-to-r from-transparent via-[#e7c48a] to-transparent"></div>
+                <h2 class="text-5xl md:text-7xl tracking-wide">AKASHA</h2>
+                <p class="text-xl md:text-2xl tracking-[0.5em] text-[#e7c48a] pl-4 sans">COLLECTIVE</p>
+                <p class="text-base md:text-lg font-semibold tracking-[0.3em] uppercase text-white pt-8 sans">
+                  Salon. Experience. Vibe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="px-6 py-20 border-t border-white/10 bg-zinc-950/80">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/20">
+        <p class="text-sm uppercase tracking-[0.3em] text-[#e7c48a] mb-4 sans">Luxury Energy</p>
+        <p class="text-zinc-300 leading-7 sans">High-end results with a soulful, editorial feel. Think custom color, intentional cuts, and hair that makes an entrance.</p>
+      </div>
+      <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/20">
+        <p class="text-sm uppercase tracking-[0.3em] text-[#e7c48a] mb-4 sans">Independent Artists</p>
+        <p class="text-zinc-300 leading-7 sans">A collective of stylists with distinct aesthetics, specialties, and personalities—working together under one unforgettable brand.</p>
+      </div>
+      <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/20">
+        <p class="text-sm uppercase tracking-[0.3em] text-[#e7c48a] mb-4 sans">Whole Ass Vibe</p>
+        <p class="text-zinc-300 leading-7 sans">Not just an appointment. Not just a service. This is the place you come when you want the hair and the energy to match.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stylists" class="px-6 py-20">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 text-center">
+        <p class="text-sm uppercase tracking-[0.45em] text-[#e7c48a] mb-3 sans">Meet the Collective</p>
+        <h3 class="text-4xl md:text-5xl">Your stylists, your energy, your era.</h3>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-[1.75rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-6 min-h-[280px] flex flex-col justify-between">
+          <div class="h-12 w-12 rounded-2xl bg-[#e7c48a]/15 border border-[#e7c48a]/25 flex items-center justify-center text-[#e7c48a] text-lg font-semibold sans">01</div>
+          <div>
+            <h4 class="text-2xl mb-2">Shannon</h4>
+            <p class="text-zinc-300 leading-7 mb-2 sans">Master stylist • expert colorist • precision cutting • timeless, elevated results</p>
+            <p class="text-sm tracking-[0.2em] uppercase text-[#e7c48a] mb-6 sans">The Classic Signature – refined color + precision cuts</p>
+            <div class="flex items-center justify-between gap-4 sans">
+              <a href="sms:7206292480" class="inline-block rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold tracking-[0.2em] uppercase text-white transition hover:bg-white/10">Text Shannon</a>
+              <span class="text-sm text-zinc-400 tracking-[0.15em] min-w-[145px] text-right">(720) 629-2480</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-[1.75rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-6 min-h-[280px] flex flex-col justify-between">
+          <div class="h-12 w-12 rounded-2xl bg-[#e7c48a]/15 border border-[#e7c48a]/25 flex items-center justify-center text-[#e7c48a] text-lg font-semibold sans">02</div>
+          <div>
+            <h4 class="text-2xl mb-2">Des</h4>
+            <p class="text-zinc-300 leading-7 mb-2 sans">Lash artist • full sets • fills • known for the best lashes in town</p>
+            <p class="text-sm tracking-[0.2em] uppercase text-[#e7c48a] mb-6 sans">The Lash Effect – bold, full, flawless lashes</p>
+            <div class="flex items-center justify-between gap-4 sans">
+              <a href="sms:9704625566" class="inline-block rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold tracking-[0.2em] uppercase text-white transition hover:bg-white/10">Text Des</a>
+              <span class="text-sm text-zinc-400 tracking-[0.15em] min-w-[145px] text-right">(970) 462-5566</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-[1.75rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-6 min-h-[280px] flex flex-col justify-between">
+          <div class="h-12 w-12 rounded-2xl bg-[#e7c48a]/15 border border-[#e7c48a]/25 flex items-center justify-center text-[#e7c48a] text-lg font-semibold sans">03</div>
+          <div>
+            <h4 class="text-2xl mb-2">Meg</h4>
+            <p class="text-zinc-300 leading-7 mb-2 sans">Master stylist • lived-in color • blonding expert • precision short hair cutting</p>
+            <p class="text-sm tracking-[0.2em] uppercase text-[#e7c48a] mb-6 sans">The Lived-In Blend – effortless, dimensional color</p>
+            <div class="flex items-center justify-between gap-4 sans">
+              <a href="sms:7026779476" class="inline-block rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold tracking-[0.2em] uppercase text-white transition hover:bg-white/10">Text Meg</a>
+              <span class="text-sm text-zinc-400 tracking-[0.15em] min-w-[145px] text-right">(702) 677-9476</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-[1.75rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-6 min-h-[280px] flex flex-col justify-between">
+          <div class="h-12 w-12 rounded-2xl bg-[#e7c48a]/15 border border-[#e7c48a]/25 flex items-center justify-center text-[#e7c48a] text-lg font-semibold sans">04</div>
+          <div>
+            <h4 class="text-2xl mb-2">Danielle</h4>
+            <p class="text-zinc-300 leading-7 mb-2 sans">Extension specialist • master colorist • long layers and seamless blends</p>
+            <p class="text-sm tracking-[0.2em] uppercase text-[#e7c48a] mb-6 sans">The Seamless Extension – full, blended, luxury length</p>
+            <div class="flex items-center justify-between gap-4 sans">
+              <a href="sms:9702014798" class="inline-block rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold tracking-[0.2em] uppercase text-white transition hover:bg-white/10">Text Danielle</a>
+              <span class="text-sm text-zinc-400 tracking-[0.15em] min-w-[145px] text-right">(970) 201-4798</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-[1.75rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-6 min-h-[280px] flex flex-col justify-between">
+          <div class="h-12 w-12 rounded-2xl bg-[#e7c48a]/15 border border-[#e7c48a]/25 flex items-center justify-center text-[#e7c48a] text-lg font-semibold sans">05</div>
+          <div>
+            <h4 class="text-2xl mb-2">Angela</h4>
+            <p class="text-zinc-300 leading-7 mb-2 sans">Vivid color specialist • edgy cuts • creative transformations • top-tier perms</p>
+            <p class="text-sm tracking-[0.2em] uppercase text-[#e7c48a] mb-6 sans">The Vivid Transformation – bold, creative, statement color</p>
+            <div class="flex items-center justify-between gap-4 sans">
+              <a href="sms:9702615389" class="inline-block rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold tracking-[0.2em] uppercase text-white transition hover:bg-white/10">Text Angela</a>
+              <span class="text-sm text-zinc-400 tracking-[0.15em] min-w-[145px] text-right">(970) 261-5389</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-[1.75rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-6 min-h-[280px] flex flex-col justify-between">
+          <div class="h-12 w-12 rounded-2xl bg-[#e7c48a]/15 border border-[#e7c48a]/25 flex items-center justify-center text-[#e7c48a] text-lg font-semibold sans">06</div>
+          <div>
+            <h4 class="text-2xl mb-2">Brenda</h4>
+            <p class="text-zinc-300 leading-7 mb-2 sans">Blonding specialist for darker hair • dimensional color • bold, bright results</p>
+            <p class="text-sm tracking-[0.2em] uppercase text-[#e7c48a] mb-6 sans">The Bright Lift – high-impact blonding for darker hair</p>
+            <div class="flex items-center justify-between gap-4 sans">
+              <a href="sms:9703129732" class="inline-block rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold tracking-[0.2em] uppercase text-white transition hover:bg-white/10">Text Brenda</a>
+              <span class="text-sm text-zinc-400 tracking-[0.15em] min-w-[145px] text-right">(970) 312-9732</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="px-6 py-20 border-t border-white/10 bg-zinc-950/80">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <p class="text-sm uppercase tracking-[0.45em] text-[#e7c48a] mb-4 sans">Services</p>
+        <h3 class="text-4xl md:text-5xl mb-6">Signature services designed to elevate your look, your energy, and your entire experience.</h3>
+        <p class="text-zinc-300 leading-8 max-w-xl sans">Pricing may vary based on length, density, and stylist expertise.</p>
+      </div>
+
+      <div class="grid gap-4 sans">
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Root Retouch + Blow Dry</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">$70 – $100</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Root Retouch + Cut</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">$110 – $150</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Akasha Signature Color + Blow Dry</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">$190 – $230</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Akasha Signature Color + Cut</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">$230 – $300</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">All Over Color</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">Starting at $85</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Balayage</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">Starting at $150</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Full Highlights</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">Starting at $165</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Treatments</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">Starting at $45</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Perms</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">Consult required</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Extensions</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">Consult required</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Brazilian Blowout</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">Consult required</span></div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 flex items-center justify-between gap-4"><span class="text-lg">Vivid Color</span><span class="text-sm tracking-[0.15em] uppercase text-[#e7c48a] text-right">Consult required</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="px-6 py-20">
+    <div class="max-w-4xl mx-auto text-center rounded-[2rem] border border-[#e7c48a]/20 bg-gradient-to-b from-[#e7c48a]/10 to-white/[0.03] p-10 md:p-14">
+      <p class="text-sm uppercase tracking-[0.45em] text-[#e7c48a] mb-4 sans">Ready to Book?</p>
+      <h3 class="text-4xl md:text-6xl mb-6">Come for the hair. Stay for the vibe.</h3>
+      <p class="text-zinc-300 max-w-2xl mx-auto leading-8 mb-8 sans">Choose your stylist above to text directly, or follow along on Instagram for updates, openings, and salon vibes.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center sans">
+        <a href="#stylists" class="rounded-2xl bg-white text-black px-7 py-4 text-sm font-semibold tracking-[0.2em] uppercase transition hover:scale-[1.02] text-center">Text Your Stylist</a>
+        <a href="https://instagram.com/akashacollective970" target="_blank" rel="noreferrer" class="rounded-2xl border border-white/15 bg-black/20 px-7 py-4 text-sm font-semibold tracking-[0.2em] uppercase text-white transition hover:bg-white/10 text-center">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="px-6 py-16 border-t border-white/10 bg-black">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div class="text-center md:text-left space-y-6">
+        <p class="text-sm uppercase tracking-[0.45em] text-[#e7c48a] sans">Location</p>
+        <h3 class="text-3xl md:text-4xl">Visit Akasha Collective</h3>
+        <p class="text-zinc-300 text-lg leading-8 sans">
+          403 Kennedy Ave, Suite B<br />
+          Grand Junction, CO 81501
+        </p>
+        <a href="https://maps.google.com/?q=403+Kennedy+Ave+Suite+B+Grand+Junction+CO+81501" target="_blank" rel="noreferrer" class="inline-block mt-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold tracking-[0.2em] uppercase text-white transition hover:bg-white/10 sans">
+          Open in Maps
+        </a>
+      </div>
+
+      <div class="flex flex-col items-center space-y-4 sans">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://instagram.com/akashacollective970" alt="Instagram QR Code" class="rounded-2xl border border-white/10 bg-white p-3" />
+        <p class="text-sm text-zinc-400 tracking-[0.2em] uppercase">Scan to follow</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
